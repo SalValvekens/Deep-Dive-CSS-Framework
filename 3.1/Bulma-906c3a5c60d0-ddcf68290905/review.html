@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coach Review</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+</head>
+
+<body>
+    <section class="section has-background-danger-30">
+        <div class="container">
+            <h1 class="title has-text-primary-light">
+                Hallo Coach!
+            </h1>
+            <p class="subtitle has-text-primary-light">
+                Wat vindt u van deze dagplenning?
+            </p>
+        </div>
+    </section>
+
+    <div class="container-fluid has-background-danger-30">
+        <progress class="progress is-large is-danger" max="100">60%</progress>
+    </div>
+
+
+    <div id="planning-modal" class="modal">
+        <div class="modal-background"></div>
+
+        <div class="modal-content">
+            <div class="box">
+                <p>Dagplenning van [username]:<br>unidentified</p>
+            </div>
+        </div>
+
+        <button id="planning-modal-close" class="modal-close is-large" aria-label="close"></button>
+    </div>
+
+
+    <button id="showModal" class="bts button is-fullwidth is-fullheight is-danger">Click om dagplenning te zien van:
+        <br> [username]</button>
+
+
+
+    <script src="script.js"></script>
+
+    <footer class="has-background-danger-30">
+        <div class="col">
+            <div class="buttons is-flex is-justify-content-space-between">
+                <button class="button is-success">Accepteer</button>
+                <button class="button is-danger">Decline</button>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .bts {
+            height: 620px;
+        }
+    </style>
+
+</body>
+
+</html>
